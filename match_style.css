@@ -1,0 +1,10 @@
+.settings_btn {
+	position: relative ;
+	display: inline-block ;	
+	background-color: blue;
+}
+
+.settings_btn_title {
+	color: red;
+}
+
