@@ -1,10 +1,44 @@
-.settings_btn {
+#settings_btn {
 	position: relative ;
 	display: inline-block ;	
-	background-color: blue;
 }
 
-.settings_btn_title {
-	color: red;
+
+#settings_btn_btn {
+	background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
+
+.Settings_btn_content {
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.Settings_btn_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.Settings_btn_content a:hover {
+	background-color: #f1f1f1
+}
+
+#settings_btn_btn:hover .Settings_btn_content {
+	display: block;
+}
+
+#settings_btn_btn:hover #settings_btn {
+	background-color: #3e8e41;
+}
+
+
 

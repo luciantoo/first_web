@@ -4,15 +4,29 @@
 
 	<head>
 		<link type="text/css" rel="stylesheet" href="/Users/TOO/3pg_project/match_style.css"/>	
+		<script src="//js.leapmotion.com/leap-0.6.3.js"></script>
+		<script type="text/javascript" src="/Users/TOO/3pg_project/leap_controller.js"></script>
 		<title>Match.ME</title>
 	</head>
 	
 	<body>
 
-		<!-- the settings button : restart, tips, new game --/>
-		<div id="settings_btn">
-			<span id="settings_btn_title">Settings</span>
-			
+		<!-- the background: linear gradient from top-right to bottom-left -->
+		<div>
+			<!-- the canvas for the background -->
+			<canvas id="background_canvas" width="640" height="1080"></canvas>
+			<script type="text/javascript" src="/Users/TOO/3pg_project/gradient.js"></script>
+
+			<!-- Added two forms for players' names -->
+
+			<div id="settings_btn">
+				<button id="settings_btn_btn">Settings</button>
+				<div class="Settings_btn_Content">
+					<a href="">Restart</a> 
+					<a href="">Tips</a> 
+					<a href="">New game</a> 
+				</div>
+			</div>
 		</div>
 		
 	</body>
